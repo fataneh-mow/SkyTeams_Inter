@@ -30,7 +30,7 @@ testStrings.forEach(str => {
     console.log(`"${str}" reversed = "${reverseString(str)}"`);
 });
 
-const testLists = [["apple", "banana", "cherry"], [], ["one"], ["a","b","c","d"]]; // [] --> ?
+const testLists = [["apple", "banana", "cherry"], [], ["one"], ["a","b","c","d"]]; 
 testLists.forEach(list => {
     console.log(`[${list}] reversed = ${reverseList(list)}`);
 });
