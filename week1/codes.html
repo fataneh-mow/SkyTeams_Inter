@@ -24,10 +24,10 @@
         console.log(`Value one is equal to ${variable1}`);
         console.log(`Value two is equal to ${variable2}`);
 
-        swap(variable1, variable2);
+        console.log(`Values changed: ${[variable1, variable2]} => ${swap(variable1, variable2)}`);
 
-        console.log(`Now value one is equal to ${variable1}`);
-        console.log(`Now value two is equal to ${variable2}`);
+        // console.log(`Now value one is equal to ${variable1}`);
+        // console.log(`Now value two is equal to ${variable2}`);
 
         // 2.Even, Odd or Prime
         let askedNumber = Number(prompt("Enter a number:"));
@@ -53,7 +53,10 @@
         // functions in order
         // function for swapping
         function swap (x, y) {
-            [x, y] = [y, x];
+            let temporary = x;
+            x = y;
+            y = temporary;
+            return [x, y];
         }
         
         // function for specifying Even, Odd, or Prime number
