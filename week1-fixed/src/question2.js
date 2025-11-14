@@ -14,19 +14,12 @@ export function isEven(n) {
     }
 }
 
-export function isPrime (number) {
-    if(number < 2){
-        console.log(`${number} must be greater than 2 to check if it's prime or not!`);
-        return; 
-    }
-    
-    for(let i = 2; i < Math.ceil(number / 2); i++){
-        if(number % i === 0){
-            console.log(`${number} is not prime`);
-            return false;
-        }
-    }
-    
-    console.log(`${number} is prime`);
-    return true;
+export function isPrime(number) {
+  if (number < 2) return;
+
+  for (let i = 2; i * i <= number; i++) {
+    if (number % i === 0) return false;
+  }
+
+  return true;
 }
