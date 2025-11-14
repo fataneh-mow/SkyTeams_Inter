@@ -7,7 +7,7 @@
 
  */
 
-function swap (x, y) {
+ export function swap (x, y) {
     let temporary = x;
     x = y;
     y = temporary;
