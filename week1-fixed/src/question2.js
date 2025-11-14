@@ -6,7 +6,7 @@
 * Question: Write a function to check for even, odd or prime numbers
 
 */
-function isEven(n) {
+export function isEven(n) {
     if (n % 2 === 0) {
         return "even";
     } else {
@@ -14,7 +14,7 @@ function isEven(n) {
     }
 }
 
-function isPrime (number) {
+export function isPrime (number) {
     if(number < 2){
         console.log(`${number} must be greater than 2 to check if it's prime or not!`);
         return; 
