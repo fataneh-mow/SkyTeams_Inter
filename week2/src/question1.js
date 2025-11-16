@@ -7,10 +7,10 @@
 
  */
 
-function swap (a, b) {
+function swapVariables (a, b) {
     let swapedd = [a, b] = [b,a];
     return swapedd;
 }
 
-let swaped = swap(1,2);
+let swaped = swapVariables(1,2);
 console.log(swaped);
