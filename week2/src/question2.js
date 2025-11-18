@@ -8,7 +8,7 @@
 */
 
 export function minMax (a, b, c) {
-    items = [a, b, c];
+    let items = [a, b, c];
 
     let max = 0;
     for (let i = 0; i < items.length; i++) {
@@ -18,9 +18,10 @@ export function minMax (a, b, c) {
     };
 
     let min = items[0];
-    for ( i = 0; i < items.length; i++) {
+    for (let i = 0; i < items.length; i++) {
         if (min > items[i]){
             min = items[i];
         };
     };
+    return {max, min};
 };
