@@ -34,9 +34,11 @@ describe("isPrime()", () => {
         expect(isPrime(10)).toBe(false);
     });
 
-    it("returns undefined for numbers < 2", () => {
+    it("returns uncheckable for numbers < 2", () => {
         expect(isPrime(1)).toBe("1 is unchekable, insert another number");
         expect(isPrime(0)).toBe("0 is unchekable, insert another number");
         expect(isPrime(-5)).toBe("-5 is unchekable, insert another number");
+        expect(isPrime("Hello")).toBe("Hello is unchekable, insert another number");
+        expect(isPrime(null)).toBe("null is unchekable, insert another number");
     });
 });
