@@ -30,5 +30,5 @@ function convertToFahrenheit  (temp) {
 let resultC = convertToCelsius(25);
 console.log(resultC);
 
-// let resultF = convertToFahrenheit ();
-// console.log(resultF);
+let resultF = convertToFahrenheit ();
+console.log(resultF);
