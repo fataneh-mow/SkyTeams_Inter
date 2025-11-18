@@ -7,6 +7,9 @@
 
 */
 export function greatestNumber(arr) {
+    if (!arr || arr.length === 0) {
+        return null;
+    }
     let greatest = arr[0];
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] > greatest) {
