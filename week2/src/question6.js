@@ -12,13 +12,11 @@
     1 hr, 1 min, 5 sec 
 */
 
-function convertTime (seconds) {
-    let hours = seconds / 60;
-    let minutes = hours / 60;
-    let seconds1 = minutes / 60;
+export function convertTime (allSeconds) {
+    let remaining = Math.floor(allSeconds % 3600);
+    let hours = Math.floor(allSeconds / 3600);
+    let minutes = Math.floor(remaining / 60);
+    let seconds = Math.floor(remaining % 60);
 
-    return `${hours} hr, ${minutes} m, ${seconds1}s`
+    return `${hours} hr, ${minutes} m, ${seconds} s`
 }
-
-let result = convertTime(3665);
-console.log(result);
