@@ -29,6 +29,3 @@ export function trafficLight (color) {
             return `${color} is not applicable`
     };
 };
-
-// let test = trafficLight("  rED   ");
-// console.log(test);
