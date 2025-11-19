@@ -21,6 +21,9 @@ export function simpleInterest (P , R, T) {
 
 
 export function compoundInterest (P , R, T) {
-    let CI = Number((P * (Math.pow(1 + R/100, T) - 1)).toFixed(1)); 
+    let CI = (P * (Math.pow(1 + R/100, T) - 1)).toFixed(1); 
     return `CI = ${CI}`;
 };
+
+let result = [compoundInterest(1000, 5, 2), simpleInterest(1000, 5, 2)];
+console.log(result);
