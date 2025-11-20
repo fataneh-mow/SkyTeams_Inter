@@ -24,19 +24,11 @@ export function triangleValidityAndType(side1, side2, side3) {
         return "Sides must be numbers";
     }
 
-    // Triangle validity
     if (a + b <= c || a + c <= b || b + c <= a) {
         return "Invalid triangle";
     }
 
-    // Triangle type
     if (a === b && b === c) return "Valid triangle, Equilateral";
     if (a === b || a === c || b === c) return "Valid triangle, Isosceles";
     else return "Valid triangle, Scalene";
-}
-
-console.log(triangleValidityAndType(3, "4", 5));
-console.log(triangleValidityAndType(6, 6, 6));   
-console.log(triangleValidityAndType(3, 3, 5));   
-console.log(triangleValidityAndType(1, 2, 3));   
-console.log(triangleValidityAndType(1, "x", 3)); 
+};
