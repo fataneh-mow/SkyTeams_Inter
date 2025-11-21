@@ -14,7 +14,7 @@
 */
 
 export function digitsSum(number) {
-    if (isNaN(Number(number)) || number === undefined || number === null || Boolean(number)) {
+    if (isNaN(Number(number)) || number === undefined || number === null) {
         return `Insert a number`;
     }
 
@@ -27,7 +27,7 @@ export function digitsSum(number) {
 
     return `${number} sum is ${sum}`;
 };
-// console.log(digitsSum(123));
-// console.log(digitsSum(1/2));
+console.log(digitsSum(123));
+console.log(digitsSum(1/2));
 // console.log(1/2)
-// console.log(digitsSum(1.23));
+console.log(digitsSum(1.23)); // for all of these it's telling insert a number!
