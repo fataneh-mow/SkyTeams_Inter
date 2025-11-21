@@ -20,7 +20,7 @@ export function simpleInterest (P , R, T) {
 };
 
 
-export function compoundInterest (P , R, T) {
+export function compoundInterest (P, R, T) {
     let CI = (P * (Math.pow(1 + R/100, T) - 1)).toFixed(1); 
     return `CI = ${CI}`;
 };

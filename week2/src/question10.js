@@ -17,11 +17,9 @@
     Not leap year
 */
 
-export function isLeapYear(input) {
-    const year = Number(input);
-
-    if (isNaN(year)) {
-        return `${input} is not checkable`;
+export function isLeapYear(year) {
+    if (isNaN(Number(year))) {
+        return `${year} is not checkable`;
     }
 
     if (year % 4 !== 0) {

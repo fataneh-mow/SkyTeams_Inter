@@ -3,19 +3,19 @@
      
     * Date: Nov, 19th, 2025
 
-    * Question 11:  Simple Calculator using switch-case 
-    Description: Input two numbers and an operator (+, -, *, /) and compute the result. 
+    * Question 12. Traffic Light System using switch-case 
+    Description: Input a color (Red, Yellow, Green) and display an action (Stop, Ready, Go). 
     Example: 
     Input: 
-    5, 3, + 
+    Green 
     Output: 
-    8     
+    Go   
    
 */
 
 export function trafficLight (color) {
     if (typeof color !== "string") {
-        return `${color} is not applicable`;
+        return `Insert a color`;
     };
 
     switch (color.toLocaleLowerCase().trim()) {
@@ -26,6 +26,6 @@ export function trafficLight (color) {
         case "green":
             return "Go";
         default:
-            return `${color} is not applicable`
+            return `Color must be red, green or yellow`;
     };
 };

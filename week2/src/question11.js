@@ -18,7 +18,7 @@ export function calculate (num1, num2, operation) {
     const number2 = Number(num2);
 
     if (isNaN(number1) || isNaN(number2)) {
-        return `${num1} and ${num2} are not applicable`;
+        return `Inputs must be number`;
     }
 
     switch (operation) {
@@ -30,11 +30,11 @@ export function calculate (num1, num2, operation) {
             return number1 * number2;   
         case "/":
             if (number2 === 0) {
-                return `${number2} must not be zero`
+                return `Second number must not be zero`
             }
             return Math.round(number1 / number2);   
         default:
-            return `${operation} is not included yet!`      
+            return `Unknown character for operation`      
     };
 };
 

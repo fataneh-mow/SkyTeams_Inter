@@ -17,8 +17,6 @@ export function convertToCelsius (temp) {
         return Math.round((temp - 32) * 5 / 9);
     }
 }
-let result = convertToCelsius(36.6);
-console.log(result);
 
 export function convertToFahrenheit  (temp) {
     if (isNaN(temp)) {

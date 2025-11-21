@@ -20,10 +20,6 @@ export function typeNumber(input) {
         return `${input} is not checkable`;
     }
 
-    if (num % 2 === 0) {
-        return `${num} is even`;
-    } else {
-        return `${num} is odd`;
-    }
+    return num % 2 === 0 ? `${num} is even` : `${num} is odd`;
 };
 

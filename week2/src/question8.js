@@ -27,6 +27,3 @@ export function numberCategory (input) {
         return `${input} is zero`;
     }
 };
-
-let result = numberCategory("asd");
-console.log(result);
